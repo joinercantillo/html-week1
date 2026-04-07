@@ -19,6 +19,12 @@ article {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    background-color: rgb(208, 177, 236);
+    background-color: pink;
     
+}
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
 }
