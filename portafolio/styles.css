@@ -1,12 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 135, 216);
+}
 #mascotas {
-    background-color: rgb(206, 63, 63);
+    background-color: rgb(238, 135, 216);
     
     
    
     img {
-        width: 100%;
+        width: 50%;
         height: auto;
         border-radius: 10px;
     }
     ;
+}
+.projects {
+    background-color: rgb(238, 135, 216);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    ul {
+        color: rgb(82, 42, 184);
+    }
+    li {
+        margin-bottom: 10px;
+        a {
+            color: rgb(59, 15, 172);
+        }
+    }
+}
+.contact {
+    background-color: rgb(238, 135, 216);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    bottom{
+        background-color: rgb(121, 83, 112);
+        padding: 20px;
+        border-radius: 10px;
+        color: rgb(134, 16, 16);
+    }
+
 }
