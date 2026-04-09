@@ -8,10 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-family: sans-serif; /* Añadido para que la letra se vea más moderna */
+    font-family: sans-serif; 
 }
 
-/* Mascotas */
 .mascotas {
     background-color: rgb(250, 188, 238);
     display: flex;
@@ -30,7 +29,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
 
-/* Proyectos */
+
 .projects {
     background-color: rgb(250, 188, 238);
     padding: 20px;
@@ -41,7 +40,7 @@ body {
 
 .projects ul {
     color: rgb(82, 42, 184);
-    list-style-type: none; /* Elimina las viñetas por defecto si lo deseas */
+    list-style-type: none;      
     padding-left: 0;
 }
 
@@ -69,7 +68,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(121, 83, 112); /* Fondo contrastante para el formulario */
+    background-color: rgb(121, 83, 112); 
     padding: 25px;
     border-radius: 10px;
     color: white;
@@ -77,7 +76,7 @@ form {
     box-sizing: border-box;
     gap: 15px;
     width: 100%;
-    max-width: 400px; /* Evita que el formulario sea inmenso en pantallas grandes */
+    max-width: 400px; 
 }
 
 .form-group {
@@ -108,10 +107,10 @@ button[type="submit"]:hover {
     background-color: rgb(230, 168, 218);
 }
 
-/* Navegación y Enlaces */
+
 nav {
     background-color: #ffffff;
-    height: 20px; /* Ajustado para que no tome tanto espacio vacío */
+    height: 20px; 
     border-radius: 10px;
 }
 
