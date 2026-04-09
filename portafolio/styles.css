@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
-    justify-content: center; 
+    justify-content: baseline; 
     padding: 20px;
     border-radius: 10px;
     
@@ -37,17 +37,9 @@ body {
         object-fit: cover
     }
     }
-#pet3 {
-    background-color: rgb(250, 188, 238);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content:first baseline; 
-    padding: 20px;
-    border-radius: 10px;
-    
 
-}
+
+
     
 
 .projects {
@@ -55,6 +47,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     color: white;
+    border: 3px solid black;
+    box-sizing: border-box;
     ul {
         color: rgb(82, 42, 184);
     }
@@ -66,20 +60,51 @@ body {
     }
 }
 .contact {
+    display: flex;
+    justify-content: center;
     background-color: rgb(250, 188, 238);
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     color: white;
+    justify-content: center;
+    
+    box-sizing: border-box;
     bottom{
         background-color: rgb(121, 83, 112);
         padding: 20px;
         border-radius: 10px;
         color: rgb(134, 16, 16);
     }
+form {
+    display: flex;
+    background-color: rgb(250, 188, 238);
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    
+    border: 3px solid black;
+    box-sizing: border-box;
+    
+    gap: 15px;
+    
+    flex-direction: column;
+}
 
 }
 nav {
     background-color: #ffffff;
     height: 5%;
     border-radius: 10px;
+}
+
+a {
+    display: block;
+    margin-bottom: 20px;
+}
+.goback{
+    img{
+        width: 50px;
+    }
+    
+
 }
