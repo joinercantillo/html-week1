@@ -1,23 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(238, 135, 216);
-}
-#mascotas {
-    background-color: rgb(238, 135, 216);
+    height: calc(90%);
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
+}
+.mascotas {
+    background-color: rgb(250, 188, 238);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+    border-radius: 10px;
     
    
     img {
-        width: 500px;
-        height: auto;
+        
+        gap: 20px;
+        width: 400px;
+        height: 300px;
         border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
     }
     ;
+    video {
+        gap: 20px;
+        width:400px;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover
+    }
+    }
+#pet3 {
+    background-color: rgb(250, 188, 238);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content:first baseline; 
+    padding: 20px;
+    border-radius: 10px;
+    
+
 }
+    
+
 .projects {
-    background-color: rgb(238, 135, 216);
+    background-color: rgb(250, 188, 238);
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -32,7 +66,7 @@ body {
     }
 }
 .contact {
-    background-color: rgb(238, 135, 216);
+    background-color: rgb(250, 188, 238);
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -43,4 +77,9 @@ body {
         color: rgb(134, 16, 16);
     }
 
+}
+nav {
+    background-color: #ffffff;
+    height: 5%;
+    border-radius: 10px;
 }
