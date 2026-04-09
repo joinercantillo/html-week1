@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet store</title>
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <h1>Pet store</h1>
-        <h2>Pet list</h2>
-        <section class="link">
-            <p>
-                Go to pets
-            </p>
-            <a  href="mascotas.html"><img src="200w.gif" alt="peticon"></a>
-        </section>
-        <section>
-            <h2>About us</h2>
-        <p>We are a pet shop since 2010 </p> 
-        </section>
-        <section class="projects">
-            <h2>PROYECTS</h2>
+    <h1>Pet Store</h1>
+    <h2>Lista de Mascotas</h2>
+    
+    <section class="link">
+        <p>Ir a mascotas</p>
+        <a href="mascotas.html"><img src="200w.gif" alt="Icono de mascota"></a>
+    </section>
+    
+    <section>
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una tienda de mascotas desde el 2010.</p> 
+    </section>
+    
+    <section class="projects">
+        <h2>PROYECTOS</h2>
         <ul>
             <li><a href="#">YOUTUBE</a></li>
             <li><a href="#">INSTAGRAM</a></li>
             <li><a href="#">FACEBOOK</a></li>
             <li><a href="#">TWITTER</a></li>
         </ul>
-
-        </section class="projects">
-        <section class="contact">
-            <form action="">
-                <h2>Contact us</h2>
-                <p><label for="name"> Name: <input type="text" id="name"></label></p>
-                <p><label for="num"> Phone number: <input type="text" id="num"></label></p>
-                <p><label for="email"> email: <input type="text" id="email"></label></p>
-                <p><label for="observacion">observacion: <textarea id="observacion"></textarea></label></p>
-                <button type="submit">submit</button>
-            </form>
-        </section class="contact">
+    </section>
+    
+    <section class="contact">
+        <form action="">
+            <h2>Contáctanos</h2>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="num">Número de teléfono:</label>
+                <input type="text" id="num" placeholder="Tu teléfono">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Tu correo">
+            </div>
+            <div class="form-group">
+                <label for="observacion">Observación:</label>
+                <textarea id="observacion" rows="4"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
         </form>
-        
-        <section class="link">
-            <a href="portafolio.html">Go to PORTAFOLIO</a>
-        </section>
+    </section>
+    
+    <section class="link">
+        <a href="portafolio.html">Ir al PORTAFOLIO</a>
+    </section>
 </body>
 </html>

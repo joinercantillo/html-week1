@@ -1,5 +1,5 @@
 body {
-    height: calc(90%);
+    min-height: 100vh;
     margin: 10px;
     padding: 20px;
     border: 3px solid black;
@@ -8,103 +8,131 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+    font-family: sans-serif; /* Añadido para que la letra se vea más moderna */
 }
+
+/* Mascotas */
 .mascotas {
     background-color: rgb(250, 188, 238);
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
-    justify-content: baseline; 
+    justify-content: flex-start; 
     padding: 20px;
     border-radius: 10px;
-    
-   
-    img {
-        
-        gap: 20px;
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-    }
-    ;
-    video {
-        gap: 20px;
-        width:400px;
-        height: 300px;
-        border-radius: 10px;
-        object-fit: cover
-    }
-    }
+}
 
+.mascotas img, .mascotas video {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
 
-
-    
-
+/* Proyectos */
 .projects {
     background-color: rgb(250, 188, 238);
     padding: 20px;
     border-radius: 10px;
-    color: white;
     border: 3px solid black;
     box-sizing: border-box;
-    ul {
-        color: rgb(82, 42, 184);
-    }
-    li {
-        margin-bottom: 10px;
-        a {
-            color: rgb(59, 15, 172);
-        }
-    }
 }
+
+.projects ul {
+    color: rgb(82, 42, 184);
+    list-style-type: none; /* Elimina las viñetas por defecto si lo deseas */
+    padding-left: 0;
+}
+
+.projects li {
+    margin-bottom: 10px;
+}
+
+.projects li a {
+    color: rgb(59, 15, 172);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contacto y Formulario */
 .contact {
     display: flex;
     justify-content: center;
     background-color: rgb(250, 188, 238);
     padding: 25px;
     border-radius: 10px;
-    color: white;
-    justify-content: center;
-    
+    color: rgb(12, 10, 10);
     box-sizing: border-box;
-    bottom{
-        background-color: rgb(121, 83, 112);
-        padding: 20px;
-        border-radius: 10px;
-        color: rgb(134, 16, 16);
-    }
+}
+
 form {
     display: flex;
-    background-color: rgb(250, 188, 238);
+    flex-direction: column;
+    background-color: rgb(121, 83, 112); /* Fondo contrastante para el formulario */
     padding: 25px;
     border-radius: 10px;
     color: white;
-    
     border: 3px solid black;
     box-sizing: border-box;
-    
     gap: 15px;
-    
-    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Evita que el formulario sea inmenso en pantallas grandes */
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
+
+.form-group input, .form-group textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background-color: rgb(250, 188, 238);
+    color: rgb(12, 10, 10);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(230, 168, 218);
+}
+
+/* Navegación y Enlaces */
 nav {
     background-color: #ffffff;
-    height: 5%;
+    height: 20px; /* Ajustado para que no tome tanto espacio vacío */
     border-radius: 10px;
 }
 
 a {
-    display: block;
-    margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.goback{
-    img{
-        width: 50px;
-    }
-    
 
+.goback {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.goback img {
+    width: 50px;
+}
+
+.goback a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
