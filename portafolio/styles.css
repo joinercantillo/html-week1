@@ -8,7 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    
 }
 
 .mascotas {
@@ -31,17 +32,25 @@ body {
 
 
 .projects {
-    background-color: rgb(250, 188, 238);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(109, 220, 240);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 100px;
     border: 3px solid black;
     box-sizing: border-box;
+    gap: 80px;
 }
+
 
 .projects ul {
     color: rgb(82, 42, 184);
     list-style-type: none;      
     padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    
+    
 }
 
 .projects li {
@@ -52,9 +61,9 @@ body {
     color: rgb(59, 15, 172);
     text-decoration: none;
     font-weight: bold;
+    
 }
 
-/* Contacto y Formulario */
 .contact {
     display: flex;
     justify-content: center;
@@ -96,7 +105,7 @@ button[type="submit"] {
     background-color: rgb(250, 188, 238);
     color: rgb(12, 10, 10);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; 
     border: 2px solid black;
     font-weight: bold;
     cursor: pointer;
@@ -134,4 +143,47 @@ a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.me {
+    background-color: rgb(143, 224, 235);
+}
+
+#portfolio {
+    background-color: rgb(143, 224, 235);
+}
+
+.button1 button:hover {
+    background: #d36f17;
+}
+.button1 button {
+    cursor: pointer;
+    background: #cac7c5;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    transition: all ease-in 0.2s;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+footer ul {
+    gap: 80px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    img {
+        width: 70px    ;
+    }
 }
