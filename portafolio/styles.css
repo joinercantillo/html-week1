@@ -155,8 +155,22 @@ a {
 
 .button1 button:hover {
     background: #d36f17;
+
+
 }
-.button1 button {
+
+
+.me {
+    display: flex;
+    flex-direction: column; /* 👈 Esto obliga al título a quedarse arriba */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    justify-content: space-between; /* Empuja el título arriba y los botones al final */
+    height: 300px; /* O el alto que prefieras */
+    padding: 20px;
+    
+}
+
+.buttons button {
     cursor: pointer;
     background: #cac7c5;
     height: 40px;
