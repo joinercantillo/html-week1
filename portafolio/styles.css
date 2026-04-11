@@ -186,6 +186,9 @@ footer {
 .contact {
     display: flex;
     justify-content: center;
+    h2 {
+        color: #e6dbdb ;
+    }
 }
 
 form {
