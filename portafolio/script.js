@@ -1,11 +1,9 @@
-// JavaScript para interactividad básica
-
-// Función para mostrar mensaje de bienvenida
+// TASK 5: JavaScript - Agregando interactividad - Función para mostrar mensaje de bienvenida al cargar la página
 function mostrarBienvenida() {
     alert("¡Bienvenido a mi portafolio! Soy Joiner Cantillo, futuro desarrollador.");
 }
 
-// Función para cambiar el texto de un párrafo
+// TASK 5: JavaScript - Agregando interactividad - Función para cambiar el texto de un párrafo al hacer clic en un botón
 function cambiarTexto() {
     const parrafo = document.getElementById('parrafo-cambiar');
     if (parrafo) {
@@ -13,19 +11,15 @@ function cambiarTexto() {
     }
 }
 
-// Función para mostrar/ocultar contenido
+// TASK 5: JavaScript - Agregando interactividad - Función para mostrar/ocultar contenido con un efecto dinámico
 function toggleContenido() {
     const contenido = document.getElementById('contenido-oculto');
     if (contenido) {
-        if (contenido.style.display === 'none') {
-            contenido.style.display = 'block';
-        } else {
-            contenido.style.display = 'none';
-        }
+        contenido.classList.toggle('hidden');
     }
 }
 
-// Agregar event listeners cuando el DOM esté cargado
+// TASK 5: JavaScript - Agregando interactividad - Agregar event listeners cuando el DOM esté cargado para reaccionar a acciones del usuario
 document.addEventListener('DOMContentLoaded', function() {
     // Mostrar bienvenida al cargar la página
     mostrarBienvenida();
